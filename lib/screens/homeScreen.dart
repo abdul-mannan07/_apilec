@@ -14,23 +14,7 @@ class Homescreen extends StatefulWidget {
 }
 
 class _HomescreenState extends State<Homescreen> {
-  //********custom class model*********** ////
-  // List<classModel> modelList = [];
-  // Future<List<classModel>> getUser() async {
-  //   final response =
-  //       await http.get(Uri.parse("https://jsonplaceholder.typicode.com/users"));
-  //   var data = jsonDecode(response.body.toString());
-  //   if (response.statusCode == 200) {
-  //     for (Map i in data) {
-  //       classModel classmodel =
-  //           classModel(id: i["id"], email: i["email"], name: i["name"]);
-  //       modelList.add(classmodel);
-  //     }
-  //     return modelList;
-  //   } else {
-  //     return throw ("execptions");
-  //   }
-  // }
+
 
   List<ClassModelNew> newList = [];
   Future<List<ClassModelNew>> newUser() async {
@@ -75,3 +59,20 @@ class _HomescreenState extends State<Homescreen> {
     );
   }
 }
+  //********custom class model*********** ////
+  // List<classModel> modelList = [];
+  // Future<List<classModel>> getUser() async {
+  //   final response =
+  //       await http.get(Uri.parse("https://jsonplaceholder.typicode.com/users"));
+  //   var data = jsonDecode(response.body.toString());
+  //   if (response.statusCode == 200) {
+  //     for (Map i in data) {
+  //       classModel classmodel =
+  //           classModel(id: i["id"], email: i["email"], name: i["name"]);
+  //       modelList.add(classmodel);
+  //     }
+  //     return modelList;
+  //   } else {
+  //     return throw ("execptions");
+  //   }
+  // }
